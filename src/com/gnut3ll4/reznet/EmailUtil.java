@@ -11,7 +11,7 @@ import javax.mail.internet.MimeMessage;
 
 public class EmailUtil {
 
-	public static void sendEmail(String username, String password, boolean smtpAuth, boolean starttlsEnable, String host, int port,String[] toEmail, String subject, String body){
+	public static void sendEmail(final String username, final String password, boolean smtpAuth, boolean starttlsEnable, String host, int port,String[] toEmail, String subject, String body){
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", ""+smtpAuth);
