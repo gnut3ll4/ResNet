@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.prefs.Preferences;
 
-import org.apache.http.client.ClientProtocolException;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -197,8 +196,6 @@ public class Main {
 
 		} catch (JSONException e) {
 			e.printStackTrace();
-		} catch (ClientProtocolException e1) {
-			e1.printStackTrace();
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
